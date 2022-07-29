@@ -73,14 +73,74 @@
         <p class="ms-3">Medios de pago</p>
       </div>
     </div>
-    <div class="modal">
-      
+   
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Agrega Productos</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <form action="" id="formulario">
+        <label for="id">Id</label>
+        <input type="text" id="id" name="id" class="w-100 form-control customInput">
+        
+        <label for="id">Nombre Producto</label>
+        <input type="text" id="nombreProducto" name="name" class="w-100 form-control customInput">
+
+        <label for="id">Precio</label>
+        <input type="text" id="precio" name="price" class="w-100 form-control customInput">
+
+        <label for="id">Descripción</label>
+        <input type="text" id="descripcion" name="description" class="w-100 form-control customInput">
+
+      </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary" id="agregar">Agregar</button>
+      </div>
     </div>
+  </div>
+</div>
     <div class="container">
       <div class="my-4 d-flex justify-content-center">
       <h1 class="text-center me-3">Productos</h1>
-      <button>+</button>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">+</button>
     </div>
+  </div>
+  <div class="row">
+  <div class="container-fluid d-flex ">
+
+   <div class="card col-4" >
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+    </div>
+    <div class="card col-4">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+      <div class="card col-4">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body ">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+  </div>
   </div>
   </main>
   <footer></footer>
